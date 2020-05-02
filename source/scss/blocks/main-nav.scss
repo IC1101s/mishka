@@ -89,18 +89,16 @@
 
 	.main-nav--closed .main-nav__navigation,
 	.main-nav--closed .main-nav__navigation-else,
+	.main-nav__free-delivery,
 	.main-nav--nojs .main-nav__toggle {
 		display: none;
 	}
 
 	.main-nav--opened .main-nav__navigation,
 	.main-nav--opened .main-nav__navigation-else,
-	.main-nav--nojs .main-nav__navigation {
+	.main-nav--nojs .main-nav__navigation,
+	.main-nav--nojs .main-nav__navigation-else {
 		display: block;
-	}
-
-	.main-nav__free-delivery {
-		display: none;
 	}
 }
 
