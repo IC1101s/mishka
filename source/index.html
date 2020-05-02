@@ -6,6 +6,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<title>Mishka - Главная</title>
 	<link rel="stylesheet" href="css/style.min.css">
+	<script src="js/picturefill/picturefill.min.js"></script>
 </head>
 <body>
 	<div style="display: none;">
@@ -14,7 +15,7 @@
 	
 	<!-- Page-Header -->
 	<header class="page-header">
-		<nav class="main-nav main-nav--opened main-nav--nojs">
+		<nav class="main-nav main-nav--closed main-nav--nojs">
 			<div class="main-nav__container-logo">
 				<a class="main-nav__logo">
 					<picture>
@@ -70,6 +71,127 @@
 		</nav>
 	</header>
 
-	<script src="js/main-nav.js"></script>
+	<main>
+		<h1 class="visually-hidden">Mishka — сайт где вы можете купить 
+		 милые штуки ручной работы для дома.</h1>
+		
+		<!-- Promo -->
+		<section class="promo">
+			<div class="promo__wrapper">
+				<h2 class="visually-hidden">Промо-блок</h2>
+				<p class="promo__title">Милые штуки ручной<br> работы для дома</p>
+				<ul class="promo__list section-list">
+					<li class="section-list__item">
+						<a class="section-list__link" href="#interior">
+							<h3 class="section-list__block section-list__block--interior">
+								<span class="section-list__text">Предметы интерьера</span>
+							</h3>
+						</a>						
+					</li>
+					<li class="section-list__item">	
+						<a class="section-list__link" href="#kidstoys">	
+							<h3 class="section-list__block section-list__block--kids-toys">				
+								<span class="section-list__text">Детские игрушки</span>	
+							</h3>
+						</a>						
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Recommendation -->
+		<section class="recommendation">
+			<div class="recommendation__wrapper">
+				<h2 class="visually-hidden">Рекомендуемый товар</h2>
+				<header class="recommendation__header">
+					<h3 class="recommendation__title">Вязаные корзинки</h3>
+					<b class="recommendation__top">Товар<br> недели</b>
+				</header>
+				<div class="recommendation__container-main">
+					<div class="recommendation__product-desc">
+						<p class="recommendation__description">Экологически чистая пряжа, ручная работа. 
+						 Доступны в шести расцветках, и трех размерах.</p>
+						<table class="recommendation__table">
+							<tr>
+								<th class="recommendation__header-cell">Цвет:</th>
+								<td class="recommendation__cell">&laquo;Тиффани&raquo;/серый</td>
+							</tr>
+							<tr>
+								<th class="recommendation__header-cell">Диаметр:</th>
+								<td class="recommendation__cell">25 см</td>
+							</tr>
+							<tr>
+								<th class="recommendation__header-cell">Высота:</th>
+								<td class="recommendation__cell">15 см</td>
+							</tr>
+						</table>
+					</div>
+					<div class="recommendation__product-img">
+						<picture>
+							<source type="image/webp" media="(min-width: 1150px)" 
+							 srcset="img/recommendation/triple-set-desktop@1x.webp 1x,
+							         img/recommendation/triple-set-desktop@2x.webp 2x">
+							<source type="image/webp" media="(min-width: 768px)" 
+							 srcset="img/recommendation/triple-set-tablet@1x.webp 1x,
+							         img/recommendation/triple-set-tablet@2x.webp 2x">
+							<source type="image/webp" 
+							 srcset="img/recommendation/triple-set-mobile@1x.webp 1x,
+							         img/recommendation/triple-set-mobile@2x.webp 2x">
+
+							<source media="(min-width: 1150px)" 
+							 srcset="img/recommendation/triple-set-desktop@1x.jpg 1x,
+							         img/recommendation/triple-set-desktop@2x.jpg 2x">
+							<source media="(min-width: 768px)" 
+							 srcset="img/recommendation/triple-set-tablet@1x.jpg 1x,
+							         img/recommendation/triple-set-tablet@2x.jpg 2x">
+							<img class="recommendation__image" 
+							 src="img/recommendation/triple-set-mobile@1x.jpg" 
+							 srcset="img/recommendation/triple-set-mobile@2x.jpg 2x" 
+							 alt="Три вязанные корзинки">
+						</picture>		
+					</div>
+				</div>
+				<div class="recommendation__product-buy">
+					<b class="recommendation__cost">Цена: 990 руб.</b>
+					<button class="recommendation__button button" type="button">Заказать</button>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Modal-Cart -->
+		<section class="modal-cart">
+			<div class="modal-cart__wrapper">
+				<h2 class="modal-cart__title">Добавить в корзину</h2>
+				<p class="modal-cart__text">Выберите размер:</p>
+				<form method="get">
+					<fieldset class="modal-cart__sizes">
+						<legend class="visually-hidden">Размер:</legend>
+						<ul class="modal-cart__list">
+							<li class="modal-cart__item">
+								<input class="modal-cart__input visually-hidden" type="radio" name="size" 
+								 id="size-s" value="S" checked>
+								<label class="modal-cart__label" for="size-s">s</label>
+							</li>
+							<li class="modal-cart__item">
+								<input class="modal-cart__input visually-hidden" type="radio" name="size" 
+								 id="size-m" value="M">
+								<label class="modal-cart__label" for="size-m">m</label>
+							</li>
+							<li class="modal-cart__item">
+								<input class="modal-cart__input visually-hidden" type="radio" name="size" 
+								 id="size-l" value="L">
+								<label class="modal-cart__label" for="size-l">l</label>
+							</li>
+						</ul>
+					</fieldset>
+					<button class="modal-cart__button button" type="submit">Добавить</button>
+				</form>
+			</div>
+		</section>
+		<div class="modal-overlay"></div>
+	</main>
+
+	<script src="js/main-nav/main-nav.js"></script>
+	<script src="js/modal-cart/modal-cart.js"></script>
 </body>
 </html>
