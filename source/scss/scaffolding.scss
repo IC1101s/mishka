@@ -57,11 +57,13 @@ input[type="radio"].visually-hidden {
 	font-weight: 700;
 	color: #444444;
 	text-transform: uppercase;
+	text-align: center;
 	
+	outline: 0;
 	vertical-align: middle;
 	background-color: transparent;
 	border: 2px solid #444444;
-	outline: 0;
+	box-sizing: border-box;
 	
 	transition-property: color, background-color;
 	transition-duration: 0.08s;
