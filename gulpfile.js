@@ -52,7 +52,7 @@ gulp.task("images", function () {
 });
 
 gulp.task("sprite", function () {
-	return gulp.src("source/img/**/icon-header-*.svg")
+	return gulp.src("source/img/**/{icon-header-*,icon-social-*,logo-footer*,logo-htmlacademy*}.svg")
 	.pipe(svgstore({
 		inlineSvg: true
 	}))
