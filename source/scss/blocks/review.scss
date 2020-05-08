@@ -81,7 +81,8 @@
 	height: 50px;
 
 	font-size: 17px;
-	
+		
+	outline: 0;
 	border: 1px solid #ececec;
 	background-color: transparent;
 	background-repeat: no-repeat;
@@ -105,6 +106,7 @@
 
 	&:focus {
 		opacity: 0.6;
+		outline: 1px solid #bababa;
 	}
 
 	&:active {
@@ -239,7 +241,7 @@
 		padding-left: 175px;
 		padding-right: 0;
 		padding-top: 70px;
-		padding-bottom: 190px;
+		padding-bottom: 176px;
 		width: 1050px;
 
 		box-sizing: border-box;
