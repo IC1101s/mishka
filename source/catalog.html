@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="мишка, mishka, предметы интерьера, детские игрушки, вязаные корзинки, 
+	 штучки для дома">
+	<meta name="description" content="Mishka — это сайт с милыми штучками ручной работы для дома, 
+	 здесь вы сможете купить детские игрушки, вязаные корзинки, предметы интерьера и много другое.">
+	<title>Mishka - Главная</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<script src="js/picturefill/picturefill.min.js"></script>
+</head>
+<body>
+	<div style="display: none;">
+		<include src="build/img/sprite.svg"></include>	
+	</div>
+	
+	<!-- Page-Header -->
+	<header class="page-header">
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<div class="main-nav__container-logo">
+				<a href="index.html" class="main-nav__logo">
+					<picture>
+						<source media="(min-width: 1150px)" srcset="img/main-nav/logo-desktop.svg">
+						<source media="(min-width: 768px)" srcset="img/main-nav/logo-tablet.svg">
+						<img class="main-nav__logo-image" src="img/main-nav/logo-mobile.svg"
+					 	 alt="Логотип - Mishka">
+					</picture>		
+				</a>
+				<button class="main-nav__toggle" type="button">
+					<span class="visually-hidden">Меню</span>
+				</button>
+			</div>
+			<div class="main-nav__navigation">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a>Каталог товаров</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#order">Вязание на заказ</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#new">Новые поступления</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#sale">Распродажа</a>
+					</li>
+				</ul>
+			</div>
+			<div class="main-nav__navigation-else">
+				<p class="main-nav__search">
+					<button class="main-nav__search-button" type="button">
+						<svg class="main-nav__search-icon" role="presentation" aria-hidden="true" 
+						 focusable="false" width="18" height="18">
+							<use xlink:href="#icon-header-search"></use>
+						</svg>
+						Поиск по сайту
+					</button>
+				</p>
+				<p class="main-nav__cart">
+					<a href="#cart" class="main-nav__cart-link">
+						<svg class="main-nav__cart-icon" role="presentation" aria-hidden="true"
+						 focusable="false" width="20" height="19">
+							<use xlink:href="#icon-header-cart"></use>
+						</svg>
+						Корзина: пока пуста
+					</a>
+				</p>
+			</div>
+			<div class="main-nav__free-delivery">
+				<p class="main-nav__free">Бесплатная доставка по России</p>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		
+	</main>
+
+	<!-- Page-Footer -->
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__logo-footer">
+				<a href="index.html" class="page-footer__link-logo">
+					<svg class="page-footer__logo" focusable="false" width="102" height="34">
+					 	<use xlink:href="#logo-footer"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="page-footer__social">
+				<ul class="page-footer__social-list social-list">
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://www.instagram.com" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="22" height="21">
+							 	<use xlink:href="#icon-social-insta"></use>
+							</svg>
+							<span class="visually-hidden">Инстаграм</span>
+						</a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://ru-ru.facebook.com" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="15" height="28">
+							 	<use xlink:href="#icon-social-fb"></use>
+							</svg>
+							<span class="visually-hidden">Фейсбук</span>
+						</a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://twitter.com" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="24" height="20">
+							 	<use xlink:href="#icon-social-twitter"></use>
+							</svg>
+							<span class="visually-hidden">Твитер</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright">
+				<a class="page-footer__link-copyright" href="https://htmlacademy.ru/intensive/adaptive" 
+				 target="_blank">
+					Разработано
+					<svg class="page-footer__htmlacademy" focusable="false" role="presentation" 
+					 aria-hidden="true" width="27" height="34">
+					 	<use xlink:href="#logo-htmlacademy"></use>
+					</svg>
+					<span class="visually-hidden">HTML Academy</span>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/main-nav/main-nav.js"></script>
+	<script src="js/modal-cart/modal-cart.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6834fb6a-86ff-47a6-a277-05be3c11d1af"></script>
+	<script src="js/map/map.js"></script>
+</body>
+</html>
