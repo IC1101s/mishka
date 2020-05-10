@@ -38,7 +38,7 @@
 			<div class="main-nav__navigation">
 				<ul class="main-nav__list site-list">
 					<li class="site-list__item">
-						<a href="#catalog">Каталог товаров</a>
+						<a href="catalog.html">Каталог товаров</a>
 					</li>
 					<li class="site-list__item">
 						<a href="#order">Вязание на заказ</a>
@@ -263,94 +263,94 @@
 				</div>
 			</div>
 		</section>
+	</main>
 		
-		<!-- Page-Footer -->
-		<footer class="page-footer">
-			<div class="page-footer__wrapper">
-				<div class="page-footer__logo-footer">
-					<a class="page-footer__link-logo">
-						<svg class="page-footer__logo" focusable="false" width="102" height="34">
-						 	<use xlink:href="#logo-footer"></use>
-						</svg>
-					</a>
-				</div>
-				<div class="page-footer__social">
-					<ul class="page-footer__social-list social-list">
-						<li class="social-list__item">
-							<a class="social-list__link" href="https://www.instagram.com" target="_blank">
-								<svg class="social-list__icon" focusable="false" role="presentation" 
-								 aria-hidden="true" width="22" height="21">
-								 	<use xlink:href="#icon-social-insta"></use>
-								</svg>
-								<span class="visually-hidden">Инстаграм</span>
-							</a>
+	<!-- Page-Footer -->
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__logo-footer">
+				<a class="page-footer__link-logo">
+					<svg class="page-footer__logo" focusable="false" width="102" height="34">
+					 	<use xlink:href="#logo-footer"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="page-footer__social">
+				<ul class="page-footer__social-list social-list">
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://www.instagram.com" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="22" height="21">
+							 	<use xlink:href="#icon-social-insta"></use>
+							</svg>
+							<span class="visually-hidden">Инстаграм</span>
+						</a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://ru-ru.facebook.com" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="15" height="28">
+							 	<use xlink:href="#icon-social-fb"></use>
+							</svg>
+							<span class="visually-hidden">Фейсбук</span>
+						</a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://twitter.com" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="24" height="20">
+							 	<use xlink:href="#icon-social-twitter"></use>
+							</svg>
+							<span class="visually-hidden">Твитер</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright">
+				<a class="page-footer__link-copyright" href="https://htmlacademy.ru/intensive/adaptive" 
+				 target="_blank">
+					Разработано
+					<svg class="page-footer__htmlacademy" focusable="false" role="presentation" 
+					 aria-hidden="true" width="27" height="34">
+					 	<use xlink:href="#logo-htmlacademy"></use>
+					</svg>
+					<span class="visually-hidden">HTML Academy</span>
+				</a>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- Modal-Cart -->
+	<section class="modal-cart">
+		<div class="modal-cart__wrapper">
+			<h2 class="modal-cart__title">Добавить в корзину</h2>
+			<p class="modal-cart__text">Выберите размер:</p>
+			<form method="get">
+				<fieldset class="modal-cart__sizes">
+					<legend class="visually-hidden">Размер:</legend>
+					<ul class="modal-cart__list">
+						<li class="modal-cart__item">
+							<input class="modal-cart__input visually-hidden" type="radio" name="size" 
+							 id="size-s" value="S" checked>
+							<label class="modal-cart__label" for="size-s">s</label>
 						</li>
-						<li class="social-list__item">
-							<a class="social-list__link" href="https://ru-ru.facebook.com" target="_blank">
-								<svg class="social-list__icon" focusable="false" role="presentation" 
-								 aria-hidden="true" width="15" height="28">
-								 	<use xlink:href="#icon-social-fb"></use>
-								</svg>
-								<span class="visually-hidden">Фейсбук</span>
-							</a>
+						<li class="modal-cart__item">
+							<input class="modal-cart__input visually-hidden" type="radio" name="size" 
+							 id="size-m" value="M">
+							<label class="modal-cart__label" for="size-m">m</label>
 						</li>
-						<li class="social-list__item">
-							<a class="social-list__link" href="https://twitter.com" target="_blank">
-								<svg class="social-list__icon" focusable="false" role="presentation" 
-								 aria-hidden="true" width="24" height="20">
-								 	<use xlink:href="#icon-social-twitter"></use>
-								</svg>
-								<span class="visually-hidden">Твитер</span>
-							</a>
+						<li class="modal-cart__item">
+							<input class="modal-cart__input visually-hidden" type="radio" name="size" 
+							 id="size-l" value="L">
+							<label class="modal-cart__label" for="size-l">l</label>
 						</li>
 					</ul>
-				</div>
-				<div class="page-footer__copyright">
-					<a class="page-footer__link-copyright" href="https://htmlacademy.ru/intensive/adaptive" 
-					 target="_blank">
-						Разработано
-						<svg class="page-footer__htmlacademy" focusable="false" role="presentation" 
-						 aria-hidden="true" width="27" height="34">
-						 	<use xlink:href="#logo-htmlacademy"></use>
-						</svg>
-						<span class="visually-hidden">HTML Academy</span>
-					</a>
-				</div>
-			</div>
-		</footer>
-		
-		<!-- Modal-Cart -->
-		<section class="modal-cart">
-			<div class="modal-cart__wrapper">
-				<h2 class="modal-cart__title">Добавить в корзину</h2>
-				<p class="modal-cart__text">Выберите размер:</p>
-				<form method="get">
-					<fieldset class="modal-cart__sizes">
-						<legend class="visually-hidden">Размер:</legend>
-						<ul class="modal-cart__list">
-							<li class="modal-cart__item">
-								<input class="modal-cart__input visually-hidden" type="radio" name="size" 
-								 id="size-s" value="S" checked>
-								<label class="modal-cart__label" for="size-s">s</label>
-							</li>
-							<li class="modal-cart__item">
-								<input class="modal-cart__input visually-hidden" type="radio" name="size" 
-								 id="size-m" value="M">
-								<label class="modal-cart__label" for="size-m">m</label>
-							</li>
-							<li class="modal-cart__item">
-								<input class="modal-cart__input visually-hidden" type="radio" name="size" 
-								 id="size-l" value="L">
-								<label class="modal-cart__label" for="size-l">l</label>
-							</li>
-						</ul>
-					</fieldset>
-					<button class="modal-cart__button button" type="submit">Добавить</button>
-				</form>
-			</div>
-		</section>
-		<div class="modal-overlay"></div>
-	</main>
+				</fieldset>
+				<button class="modal-cart__button button" type="submit">Добавить</button>
+			</form>
+		</div>
+	</section>
+	<div class="modal-overlay"></div>
 	
 	<script src="js/main-nav/main-nav.js"></script>
 	<script src="js/modal-cart/modal-cart.js"></script>
