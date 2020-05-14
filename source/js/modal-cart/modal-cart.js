@@ -1,10 +1,10 @@
-var recommendationButton = document.querySelector(".recommendation__button");
+var order = document.querySelector(".order--js");
 var modalCart = document.querySelector(".modal-cart");
 var modalCartButton = document.querySelector(".modal-cart__button");
 var modalOverlay = document.querySelector(".modal-overlay");
 var modalInput = document.querySelector(".modal-cart__input");
 
-recommendationButton.addEventListener("click", function () {
+order.addEventListener("click", function () {
 	modalCart.classList.add("modal-cart--visible");
 	modalOverlay.classList.add("modal-overlay--visible");
 	modalInput.focus();
