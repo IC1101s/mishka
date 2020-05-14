@@ -38,7 +38,6 @@
 	
 	outline: 0;
 	
-
 	transition-property: opacity;
 	transition-duration: 0.08s;
 	transition-timing-function: linear;
@@ -79,19 +78,40 @@
 		padding: 0 50px;
 	}
 
+	.page-footer__logo-footer {
+		display: block;
+		margin-right: 80px;
+		width: 102px;
+		height: 34px;
+	}
+
+	.page-footer__link-logo[href] {
+		outline: 0;
+
+		&:hover, 
+		&:focus {
+			.page-footer__logo {
+				fill: #46c1ae;
+
+				transition-property: fill, opacity;
+				transition-duration: 0.08s;
+				transition-timing-function: linear;
+			}
+		}
+
+		&:active {
+			.page-footer__logo {
+				opacity: 0.3;
+			}
+		}
+	}
+
 	.page-footer__social {
 		margin-left: auto; 
 	}
 
 	.page-footer__social-list {
 		margin: 0;
-	}
-
-	.page-footer__logo-footer {
-		display: block;
-		margin-right: 80px;
-		width: 102px;
-		height: 34px;
 	}
 
 	.page-footer__copyright {

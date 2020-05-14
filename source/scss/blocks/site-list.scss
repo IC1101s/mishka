@@ -24,17 +24,22 @@
 	color: #000000;
 
 	outline: 0;
+	cursor: default;
 
 	transition-property: color;
 	transition-duration: 0.08s;
 	transition-timing-function: linear;
-
-	&:focus {
-		color: rgba(0, 0, 0, 0.6);
-		outline: 1px solid #bababa;
+	
+	&[href]:hover,
+	&[href]:active {
+		cursor: pointer;
 	}
 
-	&:active {
+	&[href]:focus {
+		color: rgba(0, 0, 0, 0.6);
+	}
+
+	&[href]:active {
 		color: rgba(0, 0, 0, 0.3);
 	}
 }
@@ -61,11 +66,15 @@
 
 		font-size: 15px;
 
-		&:hover {
+		&[href]:focus {
+			outline: 1px solid #bababa;
+		}
+		
+		&[href]:hover {
 			color: rgba(0, 0, 0, 0.6);
 		}
 
-		&:active {
+		&[href]:active {
 			color: rgba(0, 0, 0, 0.3);
 		}
 	}
