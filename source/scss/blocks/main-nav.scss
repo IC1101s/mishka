@@ -22,6 +22,10 @@
 	}		
 }
 
+.main-nav__logo-image {
+	vertical-align: middle;
+}
+
 @media (max-width: $mobile-width) {
 	.main-nav__container-logo {
 		position: relative;
@@ -30,7 +34,7 @@
 		align-items: center;
 		justify-content: center;
 		padding-top: 21px;
-		padding-bottom: 13px;
+		padding-bottom: 21px;
 
 		border-top: 1px solid #ececec;
 		border-bottom: 1px solid #ececec;
