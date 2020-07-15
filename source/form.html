@@ -1,0 +1,260 @@
+
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="мишка, mishka, предметы интерьера, детские игрушки, вязаные корзинки, 
+	 штучки для дома">
+	<meta name="description" content="Mishka — это сайт с милыми штучками ручной работы для дома, 
+	 здесь вы сможете купить детские игрушки, вязаные корзинки, предметы интерьера и много другое.">
+	<title>Mishka - Главная</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<script src="js/picturefill/picturefill.min.js" async></script>
+</head>
+<body>
+	<div style="display: none;">
+		<include src="build/img/sprite.svg"></include>	
+	</div>
+	
+	<!-- Page-Header -->
+	<header class="page-header">
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<div class="main-nav__container-logo">
+				<a class="main-nav__logo-link" href="index.html">
+					<picture>
+						<source media="(min-width: 1150px)" srcset="img/main-nav/logo-desktop.svg">
+						<source media="(min-width: 768px)" srcset="img/main-nav/logo-tablet.svg">
+						<img class="main-nav__logo-image" src="img/main-nav/logo-mobile.svg"
+					 	 alt="Логотип - Mishka">
+					</picture>		
+				</a>
+				<button class="main-nav__toggle" type="button">
+					<span class="visually-hidden">Меню</span>
+				</button>
+			</div>
+			<div class="main-nav__navigation">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a href="catalog.html">Каталог товаров</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#order">Вязание на заказ</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#new">Новые поступления</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#sale">Распродажа</a>
+					</li>
+				</ul>
+			</div>
+			<div class="main-nav__navigation-else">
+				<p class="main-nav__search">
+					<button class="main-nav__search-button" type="button">
+						<svg class="main-nav__search-icon" role="presentation" aria-hidden="true" 
+						 focusable="false" width="18" height="18">
+							<use xlink:href="#icon-btn-search"></use>
+						</svg>
+						Поиск по сайту
+					</button>
+				</p>
+				<p class="main-nav__cart">
+					<a href="#cart" class="main-nav__cart-link">
+						<svg class="main-nav__cart-icon" role="presentation" aria-hidden="true"
+						 focusable="false" width="20" height="19">
+							<use xlink:href="#icon-btn-cart"></use>
+						</svg>
+						Корзина: пока пуста
+					</a>
+				</p>
+			</div>
+			<div class="main-nav__free-delivery">
+				<p class="main-nav__free">Бесплатная доставка по России</p>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<h1 class="visually-hidden">Mishka — сайт где вы можете купить 
+		милые штуки ручной работы для дома.</h1>
+
+		<section class="knitting">
+			<h2 class="knitting__title">Вязание на заказ</h2>			
+			<p class="knitting__text">Мы будем рады воплотить в жизнь ваши пожелания! 
+			Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+			<form class="knitting__form" action="https://echo.htmlacademy.ru" method="get">
+				<fieldset class="knitting__field-item">
+					<legend class="knitting__title-item">Тип</legend>
+					<ul class="knitting__list-type">
+						<li class="knitting__type-item">
+							<input class="knitting__type-input visually-hidden" type="radio" name="type" 
+							 id="interior-accessories" value="interior-accessories" checked>
+							<label class="knitting__type-label" for="interior-accessories">Аксессуар для интерьера</label>
+						</li>
+						<li class="knitting__type-item">
+							<input class="knitting__type-input visually-hidden" type="radio" name="type" 
+							 id="children-toy" value="children-toy">
+							<label class="knitting__type-label" for="children-toy">Детская игрушка</label>
+						</li>
+					</ul>				
+				</fieldset>
+				<fieldset class="knitting__field-item">
+					<legend class="knitting__title-item">Цвет</legend>
+					<ul class="knitting__list-color">
+						<li class="knitting__color-item">
+							<input class="knitting__color-input visually-hidden" type="checkbox" name="color" 
+							 id="white-field" value="white" checked>
+							<label class="knitting__color-label" for="white-field">Белый</label>
+						</li>
+						<li class="knitting__color-item">
+							<input class="knitting__color-input visually-hidden" type="checkbox" name="color" 
+							 id="gray-field" value="gray" checked>
+							<label class="knitting__color-label" for="gray-field">Серый</label>
+						</li>
+						<li class="knitting__color-item">
+							<input class="knitting__color-input visually-hidden" type="checkbox" name="color" 
+							 id="tiffany-field" value="tiffany">
+							<label class="knitting__color-label" for="tiffany-field">«Тиффани»</label>
+						</li>
+						<li class="knitting__color-item">
+							<input class="knitting__color-input visually-hidden" type="checkbox" name="color" 
+							 id="black-field" value="black">
+							<label class="knitting__color-label" for="black-field">Черный</label>
+						</li>
+						<li class="knitting__color-item">
+							<input class="knitting__color-input visually-hidden" type="checkbox" name="color" 
+							 id="pink-field" value="pink">
+							<label class="knitting__color-label" for="pink-field">Розовый</label>
+						</li>
+						<li class="knitting__color-item">
+							<input class="knitting__color-input visually-hidden" type="checkbox" name="color" 
+							 id="orange-field" value="orange">
+							<label class="knitting__color-label" for="orange-field">Оранжевый</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="knitting__field-item">
+					<legend class="knitting__title-item">ФИО</legend>
+					<ul class="knitting__list-snp">
+						<li class="knitting__snp-item">
+							<label class="knitting__snp-label" for="name-field">Имя:</label>
+							<input class="knitting__snp-input" type="text" name="name" id="name-field"
+							 placeholder="Введите ваше имя*" autocomplete="off" required>
+						</li>
+						<li class="knitting__snp-item">
+							<label class="knitting__snp-label" for="surname-field">Фамилия:</label>
+							<input class="knitting__snp-input" type="text" name="surname" id="surname-field"
+							 placeholder="Укажите фамилию*" autocomplete="off" required>
+						</li>
+						<li class="knitting__snp-item">
+							<label class="knitting__snp-label" for="patronymic-field">Отчество:</label>
+							<input class="knitting__snp-input" type="text" name="patronymic" id="patronymic-field"
+							 placeholder="Отчество, если желаете" autocomplete="off">
+						</li>
+					</ul>				
+				</fieldset>
+				<fieldset class="knitting__field-item knitting__field-item--contacts">
+					<legend class="visually-hidden">Контакты</legend>
+					<ul class="knitting__list-contacts">
+						<li class="knitting__contacts-item">
+							<label class="knitting__title-item knitting__title-item--tel">
+								<span>Тел</span>
+							</label>
+							<div class="knitting__container-contacts">
+								<input class="knitting__tel-input" type="tel" name="phone" 
+								 pattern="[+][0-9] [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 ХХХ ХХ ХХ*" 
+								 autocomplete="off" required>
+								<svg class="knitting__tel-icon" role="img" focusable="false"
+								 width="25" height="25">
+									<use class="knitting__tel-use" xlink:href="#icon-contacts-phone"></use>
+								</svg>
+							</div>
+						</li>
+						<li class="knitting__contacts-item">
+							<label class="knitting__title-item knitting__title-item--mail">
+								<span>E-mail</span>
+							</label>
+							<div class="knitting__container-contacts">
+								<input class="knitting__mail-input" type="email" name="e-mail"
+								 placeholder="Ваш Email*" required>
+								<svg class="knitting__mail-icon" role="img" focusable="false"
+								 width="32" height="26">
+									<use class="knitting__mail-use" xlink:href="#icon-contacts-mail"></use>
+								</svg>
+							</div>
+						</li>
+					</ul>		
+				</fieldset>
+				<fieldset class="knitting__field-item knitting__field-item--comment">
+					<legend class="knitting__title-item">Доп</legend>
+					<label class="visually-hidden" for="comment-field">Комментарий</label>
+					<textarea class="knitting__textarea-comment" name="comment" id="comment-field"
+					 placeholder="Опишите все ваши пожелания к заказу"></textarea>
+				</fieldset>
+				<p class="knitting__warning">*Поля обязательны для заполнения</p>
+				<button class="knitting__button button" type="submit">Отправить заказ</button>	
+			</form>
+		</section>
+	</main>
+
+	<!-- Page-Footer -->
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__logo-footer">
+				<a class="page-footer__link-logo" href="index.html">
+					<svg class="page-footer__logo" focusable="false" width="102" height="34">
+					 	<use xlink:href="#logo-footer"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="page-footer__social">
+				<ul class="page-footer__social-list social-list">
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://www.instagram.com" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="22" height="21">
+							 	<use xlink:href="#icon-social-insta"></use>
+							</svg>
+							<span class="visually-hidden">Инстаграм</span>
+						</a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://ru-ru.facebook.com" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="15" height="28">
+							 	<use xlink:href="#icon-social-fb"></use>
+							</svg>
+							<span class="visually-hidden">Фейсбук</span>
+						</a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://twitter.com" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="24" height="20">
+							 	<use xlink:href="#icon-social-twitter"></use>
+							</svg>
+							<span class="visually-hidden">Твитер</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright">
+				<a class="page-footer__link-copyright" href="https://htmlacademy.ru/intensive/adaptive" 
+				 target="_blank">
+					Разработано
+					<svg class="page-footer__htmlacademy" focusable="false" role="presentation" 
+					 aria-hidden="true" width="27" height="34">
+					 	<use xlink:href="#logo-htmlacademy"></use>
+					</svg>
+					<span class="visually-hidden">HTML Academy</span>
+				</a>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/main-nav/main-nav.js"></script>
+</body>
+</html>
