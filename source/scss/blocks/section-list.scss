@@ -1,0 +1,205 @@
+.section-list {
+	margin: 0 -30px;
+}
+
+.section-list__link {
+	outline: 0;
+}
+
+.section-list__block {
+	position: relative;
+
+	margin: 0;
+	padding-top: 28px;
+	padding-bottom: 27px;
+	padding-left: 30px;
+	padding-right: 130px;
+	
+	background-color: #56c3b2;
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		top: 50%;
+
+		opacity: 0.5;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+
+		transform: translateY(-50%);
+		transition-property: opacity;
+		transition-duration: 0.08s;
+		transition-timing-function: linear;
+	}
+
+	&--interior {
+		background-color: #63d1bb;
+
+		&::before {
+			right: 36px;
+
+			width: 40px;
+			height: 62px;
+
+			background-image: 
+			 url("../img/section-list/icon-interior.svg");
+		}
+	}
+
+	&--kids-toys {
+		background-color: #56c3b2;
+
+		&::before {
+			right: 27px;
+
+			width: 60px;
+			height: 60px;
+
+			background-image: 
+			 url("../img/section-list/icon-toy.svg");
+		}
+	}
+}
+
+.section-list__link:focus .section-list__block {
+	bottom: 5px;
+
+	box-shadow: 0 5px #56c3b2;
+	
+	&::before {
+		opacity: 0.7;
+	}
+
+	&--interior {
+		background-color: #59d5bc;
+		box-shadow: 0 5px #59d5bc;
+	}
+
+	&--kids-toys {
+		background-color: #46c1ae;
+		box-shadow: 0 5px #46c1ae;
+	}
+}
+
+.section-list__link:active .section-list__text {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.section-list__link:active .section-list__block {
+	&::before {
+		opacity: 0.3;
+	}
+}
+
+.section-list__text {
+	display: block;
+	margin: 0;
+	width: 130px;
+
+	font-size: 19px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+
+	transition-property: color;
+	transition-duration: 0.08s;
+	transition-timing-function: linear;
+}
+
+@media (min-width: $tablet-width) {
+	.section-list {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+	}
+
+	.section-list__item {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+	.section-list__link {
+		display: flex;
+    	flex-direction: column;
+    	flex-grow: 1;
+	}
+
+	.section-list__block {
+		display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	flex-grow: 1;
+
+		padding-top: 28px;
+		padding-bottom: 27px;
+		padding-left: 36px;
+		padding-right: 167px;
+
+		box-sizing: border-box;
+
+		&--kids-toys {
+
+			&::before {
+				right: 33px;
+			}
+		}
+	}
+
+	.section-list__link:hover .section-list__block {
+		bottom: 5px;
+
+		box-shadow: 0 5px #56c3b2;
+		border-top-right-radius: 3px;
+		border-top-left-radius: 3px;
+
+		&::before {
+			opacity: 0.7;
+		}
+
+		&--interior {
+			background-color: #59d5bc;
+			box-shadow: 0 5px #59d5bc;
+		}
+
+		&--kids-toys {
+			background-color: #46c1ae;
+			box-shadow: 0 5px #46c1ae;
+		}
+	}
+
+	.section-list__link:active .section-list__block {
+		&::before {
+			opacity: 0.3;
+		}
+	}
+
+	.section-list__text {
+		width: 131px;
+
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.section-list__item {
+		flex-grow: 0;
+	}
+
+	.section-list__block {
+		padding-top: 28px;
+		padding-left: 36px;
+		padding-right: 350px;
+
+		width: 525px;
+
+		&--kids-toys {
+
+			&::before {
+				right: 35px;
+			}
+		}
+	}
+}

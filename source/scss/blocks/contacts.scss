@@ -1,0 +1,300 @@
+.contacts {
+	padding-bottom: 39px;
+}
+	
+.contacts__wrapper {
+	padding: 0 30px;
+}
+	
+.contacts__title {
+	margin: 0;
+	padding-top: 35px;
+	margin-bottom: 26px;
+
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.contacts__list {
+	margin: 0;
+	margin-bottom: 37px;
+}
+
+.contacts__item {
+	display: flex;
+	margin-bottom: 30px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.contacts__term {
+	flex-shrink: 0;
+	margin-right: 30px;
+
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #444444;
+}
+
+.contacts__value {
+	margin: 0;
+
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #444444;
+}	
+
+.contacts__mail {
+	padding-bottom: 4px;
+	
+	color: #444444;
+	
+	outline: 0;
+	border-bottom: 1px solid #62d1ba; 
+
+	transition-property: color, border-color;
+	transition-duration: 0.08s;
+	transition-timing-function: linear;
+
+	&:focus {
+		color: rgb(70, 193, 174);
+		
+		outline: 1px solid #bababa;
+		border-color: rgb(70, 193, 174); 
+	}
+
+	&:active {
+		color: rgba(70, 193, 174, 0.3);
+
+		border-color: rgba(70, 193, 174, 0.1); 
+	}
+}
+
+.contacts__address {
+	font-style: normal;
+}
+
+.contacts__container-image {
+	position: relative;
+
+	margin: 0 -30px;
+	margin-bottom: 39px;
+
+	width: 100vw;
+	height: 457px;
+
+	text-align: center;
+
+	background-color: rgba(223, 223, 223, 0.4);
+	
+	&--pin {
+		&::before {
+			content: "";
+
+			position: absolute;
+			top: 145px;
+			left: calc(50% - 22px);
+			z-index: 2;
+
+			width: 66px;
+			height: 101px;
+
+			background-image:
+			 url("../img/map/icon-map-pin.svg");
+			background-repeat: no-repeat;
+			background-position: 0 0;	
+		}
+	}
+}
+
+.contacts__img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	
+	height: 457px;
+
+	transform: translateX(-50%);
+}
+
+.contacts__container-button {
+	margin: 0 auto;
+	max-width: 430px;
+}
+
+.contacts__button {
+	padding: 14px 25px;
+	width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+	.contacts {
+		padding-bottom: 57px;
+	}
+
+	.contacts__container-content {
+		background-image:
+		 url("../img/map/icon-flag.svg");
+		background-repeat: no-repeat;
+		background-position: right 3px top 46px;
+	}
+		
+	.contacts__wrapper {
+		padding: 0 50px;
+	}
+		
+	.contacts__title {
+		padding-top: 60px;
+		margin-bottom: 50px;
+
+		font-size: 43px;
+		line-height: 50px;
+
+		&::first-letter {
+			margin-left: -5px;
+		}
+	}
+
+	.contacts__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		margin-bottom: 26px;
+		width: 668px;
+	}
+
+	.contacts__item {
+		width: 334px;
+
+		&:last-child {
+			margin-bottom: 30px;
+		}
+	}
+
+	.contacts__term {
+		margin-right: 23px;
+
+		font-size: 17px;
+	}
+
+	.contacts__value {
+		margin: 0;
+
+		font-size: 17px;
+	}
+
+	.contacts__mail {
+		&:hover {
+			color: rgb(70, 193, 174);
+
+			border-color: rgb(70, 193, 174); 
+		}
+
+		&:active {
+			color: rgba(70, 193, 174, 0.3);
+
+			border-color: rgba(70, 193, 174, 0.1); 
+		}
+	}
+
+	.contacts__container-image {
+		margin: 0 -50px;
+		margin-bottom: 55px;
+		
+		&--pin {
+			&::before {
+				top: 139px;
+				left: calc(50% - 21px);
+			}
+		}
+	}
+
+	.contacts__container-button {
+		margin: 0 auto;
+		max-width: 230px;
+	}
+
+	.contacts__button {
+		width: 230px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.contacts {
+		position: relative;
+
+		padding-top: 71px;
+		padding-bottom: 105px;
+	}
+		
+	.contacts__wrapper {
+		margin: 0 auto;
+		width: 1050px;
+	}
+
+	.contacts__container-content {
+		padding-left: 175px;
+		width: 300px;
+
+		background-image:
+		 url("../img/map/icon-flag.svg");
+		background-repeat: no-repeat;
+		background-position: left 63px top 62px;
+	}
+		
+	.contacts__title {
+		padding-top: 70px;
+		padding-right: 0;
+		margin-bottom: 49px;
+
+		font-size: 53px;
+		line-height: 57px;
+	}
+
+	.contacts__list {
+		flex-direction: column;
+		margin: 0;
+		margin-bottom: 79px;
+		width: auto;
+	}
+
+	.contacts__item {
+		width: auto;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.contacts__term {
+		font-size: 17px;
+	}
+
+	.contacts__container-image {
+		position: absolute;
+		top: 71px;
+		left: 50vw;
+		z-index: 1;
+
+		margin: 0;
+		width: 525px;
+		
+		&--pin {
+			&::before {
+				top: 146px;
+				left: calc(50% - 23px);
+			}
+		}
+	}
+
+	.contacts__container-button {
+		margin: 0;
+		max-width: none;
+	}
+}

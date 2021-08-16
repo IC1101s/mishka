@@ -1,0 +1,30 @@
+// Дефолтные стили, переменные, шрифты
+@import "variables.scss";
+@import "fonts.scss";
+@import "scaffolding.scss";
+@import "blocks/modal-overlay.scss";
+
+// Header
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss"; 
+
+// index.html
+@import "blocks/promo.scss";
+@import "blocks/section-list.scss";
+@import "blocks/recommendation.scss";
+@import "blocks/modal-cart.scss";
+@import "blocks/advantages.scss";
+@import "blocks/review.scss";
+@import "blocks/contacts.scss"; 
+
+// catalog.html
+@import "blocks/catalog.scss";
+@import "blocks/production.scss";
+
+// form.html
+@import "blocks/knitting.scss";
+
+// Footer
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";

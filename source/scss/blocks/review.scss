@@ -1,0 +1,286 @@
+.review {
+	position: relative;
+
+	padding-bottom: 51px;
+
+	&::after {
+		content: "";
+
+		position: absolute;
+		bottom: 0;
+		z-index: 1;
+
+		width: 100%;
+		height: 6px;
+
+		background-image: 
+		 url("../img/review/bg-zigzag-line.svg");
+		background-repeat: repeat-x;
+		background-position: center bottom;
+		background-size: auto 6px;
+	}
+}
+
+.review__wrapper {
+	padding: 0 30px;
+}
+
+.review__title {
+	margin: 0;
+	margin-bottom: 23px;
+
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.review__block-review {
+	margin: 0;
+	margin-bottom: 25px;
+}
+
+.review__text {
+	margin: 0;
+	margin-bottom: 28px;
+
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #444444;
+}
+
+.review__author {
+	display: block;
+	margin-bottom: 32px;
+
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 700;
+	font-style: normal;
+	color: #000000;
+}
+
+.review__author-nickname {
+	line-height: 30px;
+	font-weight: 400;
+	color: #444444;
+}
+
+.review__toggles {
+	margin: 0 auto;
+	width: 260px;
+
+	font-size: 0;
+}
+
+.review__toggle {
+	display: inline-block;
+	padding: 0;
+	width: 50%;
+	height: 50px;
+
+	font-size: 17px;
+		
+	outline: 0;
+	border: 1px solid #ececec;
+	background-color: transparent;
+	background-repeat: no-repeat;
+
+	transition-property: opacity;
+	transition-duration: 0.08s;
+	transition-timing-function: linear;
+	
+	&--left {
+		border-right-width: 0;	
+		background-image: 
+	 	 url("../img/review/icon-left-arrow.svg");
+	 	background-position: 37px center;
+	}
+
+	&--right {
+		background-image: 
+	 	 url("../img/review/icon-right-arrow.svg");
+	 	background-position: 38px center;
+	}
+
+	&:focus {
+		opacity: 0.6;
+		outline: 1px solid #bababa;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+
+.review__read-container {
+	text-align: center;
+}
+
+.review__read {
+	padding: 14px 25px;
+	width: 100%;
+	max-width: 430px;
+}
+
+@media (min-width: $tablet-width) {
+	.review {
+		padding-bottom: 0;
+
+		&::after {
+			height: 15px;
+
+			background-size: auto 15px;
+		}
+	}
+
+	.review__wrapper {
+		padding: 0 50px;
+		padding-top: 77px;
+		padding-bottom: 122px;
+
+		background-image: 
+		 url("../img/review/review@1x.jpg");
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 350px auto;
+
+		@media (min-resolution: $resolution-dppx),
+			   (min-resolution: $resolution-dpi) {
+
+			background-image: 
+		 	 url("../img/review/review@2x.jpg");
+		}
+	}
+
+	.review__title {
+		margin-bottom: 50px;
+		max-width: 480px;
+
+		font-size: 43px;
+		line-height: 50px;
+	}
+
+	.review__block-review {
+		margin-bottom: 0;
+	}
+
+	.review__text {
+		margin-bottom: 58px;
+
+		font-size: 17px;
+	}
+
+	.review__block-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.review__author {
+		margin-bottom: 0;
+		max-width: 300px;
+
+		font-size: 18px;
+	}
+
+	.review__author-nickname {
+		font-size: 17px;
+	}
+
+	.review__toggles {
+		margin: 0;
+		width: 167px;
+	}
+
+	.review__toggle {	
+		border: 0;
+
+		&--left {
+		 	background-position: 11px center;
+		}
+
+		&--right {
+		 	background-position: 14px center;
+		}
+
+		&:hover {
+			opacity: 0.6;
+		}
+
+		&:active {
+			opacity: 0.3;
+		}
+	}
+
+	.review__read-container {
+		position: absolute;
+		top: 79px;
+		right: 50px;
+		z-index: 1;
+	}
+
+	.review__read {
+		width: 175px;
+		max-width: none;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.review {
+		&::after {
+			height: 23px;
+
+			background-size: auto 23px;
+		}
+	}
+
+	.review__wrapper {
+		margin: 0 auto;
+		padding-left: 175px;
+		padding-right: 0;
+		padding-top: 70px;
+		padding-bottom: 176px;
+		width: 1050px;
+
+		box-sizing: border-box;
+	}
+
+	.review__title {
+		margin-bottom: 49px;
+		max-width: 660px;
+
+		font-size: 53px;
+		line-height: 57px;
+	}
+
+	.review__text {
+		margin-bottom: 40px;
+		max-width: 775px;
+	}
+
+	.review__author {
+		max-width: 400px;
+
+		font-size: 17px;
+	}
+
+	.review__toggles {
+		width: 175px;
+	}
+
+	.review__toggle {	
+		&--left {
+		 	background-position: 19px center;
+		}
+
+		&--right {
+		 	background-position: 18px center;
+		}
+	}
+
+	.review__read-container {
+		right: calc(50vw - 525px);
+	}
+}

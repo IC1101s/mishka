@@ -1,0 +1,172 @@
+@keyframes modal-cart {
+	55% {
+		top: 52%;
+	}
+
+	100% {
+		top: 50%;
+	}
+}
+
+.modal-cart {
+	position: fixed;
+	top: -3000px;
+	left: 50%;
+	z-index: 10;
+	
+	display: none;
+	width: 320px;
+
+	text-align: center;
+	
+	border: 1px solid #c7c7c7;
+	background-color: #ffffff;
+	box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+	transform: translate(-50%, -50%);
+
+	animation-name: modal-cart;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+    animation-timing-function: 
+     cubic-bezier(0.1, 0.67, 0.27, 0.98);
+
+	&--visible {
+		display: block;		
+	}
+}
+
+.modal-cart__wrapper {
+	padding: 33px 30px 46px 30px;
+}
+
+.modal-cart__title {
+	margin: 0 auto;
+	margin-bottom: 12px;
+	width: 150px;
+
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.modal-cart__text {
+	margin: 0;
+	margin-bottom: 19px;
+
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #444444;
+}
+
+.modal-cart__sizes {
+	margin: 0;
+	margin-bottom: 31px;
+	padding: 0;
+
+	border: 0;
+}
+
+.modal-cart__list {
+	display: flex;
+	margin: 0 auto;
+	padding: 0;
+	width: 260px;
+
+	list-style: none;
+}
+
+.modal-cart__item {
+	margin-right: 7px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.modal-cart__label {
+	display: inline-block;
+	width: 78px;
+	padding: 16px 0;
+
+	font-size: 17px;
+	line-height: 16px;
+	font-weight: 700;
+	color: #444444;
+	text-transform: uppercase;
+	
+	border: 2px solid rgba(68, 68, 68, 0.1);
+	vertical-align: middle;
+}
+
+.modal-cart__input:checked ~ .modal-cart__label {
+ 	border-color: #62d1ba;
+}
+
+.modal-cart__button {
+	padding: 17px 25px;
+	width: 100%;
+	
+	color: #ffffff;
+	line-height: 17px;
+
+	border-color: #63d1bb;
+	background-color: #63d1bb;
+
+	&:focus {
+		border-color: #46c1ae;
+		background-color: #46c1ae;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.modal-cart {
+		width: 566px;
+	}
+
+	.modal-cart__wrapper {
+		padding: 32px 106px 46px;
+	}
+
+	.modal-cart__title {
+		margin-bottom: 13px;
+		width: auto;
+
+		font-size: 30px;
+		line-height: 57px;
+	}
+
+	.modal-cart__text {
+		margin-bottom: 22px;
+
+		font-size: 17px;
+	} 
+
+	.modal-cart__list {
+		width: 350px;
+	}
+
+	.modal-cart__label {
+		width: 108px;
+
+		cursor: pointer;
+		
+		transition-property: border-color;
+		transition-duration: 0.08s;
+		transition-timing-function: linear;
+		
+		&:hover {
+			border-color: rgba(68, 68, 68, 0.3);
+		}
+	}
+
+	.modal-cart__button {
+		&:hover {
+			border-color: #46c1ae;
+			background-color: #46c1ae;
+		}
+	}
+}

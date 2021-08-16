@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="keywords" content="мишка, mishka, предметы интерьера, детские игрушки, вязаные корзинки, 
+	 штучки для дома">
+	<meta name="description" content="Mishka — это сайт с милыми штучками ручной работы для дома, 
+	 здесь вы сможете купить детские игрушки, вязаные корзинки, предметы интерьера и много другое.">
+	<title>Mishka - Каталог товаров</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+	<script src="js/picturefill/picturefill.min.js" async></script>
+</head>
+<body>
+	<div style="display: none;">
+		<include src="build/img/sprite.svg"></include>	
+	</div>
+	
+	<!-- Page-Header -->
+	<header class="page-header">
+		<nav class="main-nav main-nav--closed main-nav--nojs">
+			<div class="main-nav__container-logo">
+				<a class="main-nav__logo-link" href="index.html">
+					<picture>
+						<source media="(min-width: 1150px)" srcset="img/main-nav/logo-desktop.svg">
+						<source media="(min-width: 768px)" srcset="img/main-nav/logo-tablet.svg">
+						<img class="main-nav__logo-image" src="img/main-nav/logo-mobile.svg"
+					 	 alt="Логотип - Mishka">
+					</picture>		
+				</a>
+				<button class="main-nav__toggle" type="button">
+					<span class="visually-hidden">Меню</span>
+				</button>
+			</div>
+			<div class="main-nav__navigation">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a>Каталог товаров</a>
+					</li>
+					<li class="site-list__item">
+						<a href="form.html">Вязание на заказ</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#new">Новые поступления</a>
+					</li>
+					<li class="site-list__item">
+						<a href="#sale">Распродажа</a>
+					</li>
+				</ul>
+			</div>
+			<div class="main-nav__navigation-else">
+				<p class="main-nav__search">
+					<button class="main-nav__search-button" type="button">
+						<svg class="main-nav__search-icon" role="presentation" aria-hidden="true" 
+						 focusable="false" width="18" height="18">
+							<use xlink:href="#icon-btn-search"></use>
+						</svg>
+						Поиск по сайту
+					</button>
+				</p>
+				<p class="main-nav__cart">
+					<a href="#cart" class="main-nav__cart-link">
+						<svg class="main-nav__cart-icon" role="presentation" aria-hidden="true"
+						 focusable="false" width="20" height="19">
+							<use xlink:href="#icon-btn-cart"></use>
+						</svg>
+						Корзина: пока пуста
+					</a>
+				</p>
+			</div>
+			<div class="main-nav__free-delivery">
+				<p class="main-nav__free">Бесплатная доставка по России</p>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<h1 class="visually-hidden">Mishka — сайт где вы можете купить 
+		 милые штуки ручной работы для дома.</h1>
+		
+		<!-- Catalog -->
+		<section class="catalog">
+			<div class="catalog__header-container">
+				<h2 class="catalog__header-title">Каталог товаров</h2>
+			</div>
+			<ul class="catalog__list">
+				<li class="catalog__item" tabindex="0">
+					<div class="catalog__container-img">
+						<a href="#desc">
+							<picture>
+								<source type="image/webp" media="(min-width: 1150px)" 
+								 srcset="img/catalog/photo-hare-desktop@1x.webp 1x,
+								         img/catalog/photo-hare-desktop@2x.webp 2x">
+								<source type="image/webp" media="(min-width: 768px)" 
+								 srcset="img/catalog/photo-hare-tablet@1x.webp 1x,
+								         img/catalog/photo-hare-tablet@2x.webp 2x">
+								<source type="image/webp" 
+								 srcset="img/catalog/photo-hare-mobile@1x.webp 1x,
+								         img/catalog/photo-hare-mobile@2x.webp 2x">
+
+								<source media="(min-width: 1150px)" 
+								 srcset="img/catalog/photo-hare-desktop@1x.jpg 1x,
+								         img/catalog/photo-hare-desktop@2x.jpg 2x">
+								<source media="(min-width: 768px)" 
+								 srcset="img/catalog/photo-hare-tablet@1x.jpg 1x,
+								         img/catalog/photo-hare-tablet@2x.jpg 2x">
+								<img class="catalog__image" 
+								 src="img/catalog/photo-hare-mobile@1x.jpg" 
+								 srcset="img/catalog/photo-hare-mobile@2x.jpg 2x" 
+								 alt="Вязанная игрушка похожая на зайчика в голубом свитере">
+							</picture>		
+						</a>
+					</div>
+					<div class="catalog__container-main">
+						<div class="catalog__container-title">
+							<h3 class="catalog__product-title">
+								<a href="#desc">Зайчик-попрыгайчик</a>
+							</h3>
+						</div>
+						<dl class="catalog__desc-list">
+							<div class="catalog__desc-item">
+								<dt class="catalog__term">Рост</dt>
+								<dd class="catalog__value">30 см<span>,</span></dd>
+							</div>
+							<div class="catalog__desc-item">
+								<dt class="catalog__term">вес</dt>
+								<dd class="catalog__value">200 г</dd>
+							</div>
+						</dl>
+						<div class="catalog__container-buy">
+							<b class="catalog__cost">1 200 руб.</b>
+							<button class="catalog__add order--js" type="button">
+								<svg class="catalog__cart-icon" role="presentation" aria-hidden="true"
+					 			 focusable="false" width="20" height="19">
+								 	<use xlink:href="#icon-btn-cart"></use>
+								</svg>
+								Добавить в корзину 
+							</button>
+						</div>
+					</div>
+				</li>
+				<li class="catalog__item" tabindex="0">
+					<div class="catalog__container-img">
+						<a href="#desc">
+							<picture>
+								<source type="image/webp" media="(min-width: 1150px)" 
+								 srcset="img/catalog/photo-bowl-desktop@1x.webp 1x,
+								         img/catalog/photo-bowl-desktop@2x.webp 2x">
+								<source type="image/webp" media="(min-width: 768px)" 
+								 srcset="img/catalog/photo-bowl-tablet@1x.webp 1x,
+								         img/catalog/photo-bowl-tablet@2x.webp 2x">
+								<source type="image/webp" 
+								 srcset="img/catalog/photo-bowl-mobile@1x.webp 1x,
+								         img/catalog/photo-bowl-mobile@2x.webp 2x">
+
+								<source media="(min-width: 1150px)" 
+								 srcset="img/catalog/photo-bowl-desktop@1x.jpg 1x,
+								         img/catalog/photo-bowl-desktop@2x.jpg 2x">
+								<source media="(min-width: 768px)" 
+								 srcset="img/catalog/photo-bowl-tablet@1x.jpg 1x,
+								         img/catalog/photo-bowl-tablet@2x.jpg 2x">
+								<img class="catalog__image" 
+								 src="img/catalog/photo-bowl-mobile@1x.jpg" 
+								 srcset="img/catalog/photo-bowl-mobile@2x.jpg 2x" 
+								 alt="Вязанная корзина для белья бело-красного цвета">
+							</picture>		
+						</a>
+					</div>
+					<div class="catalog__container-main">
+						<h3 class="catalog__product-title">
+							<a href="#desc">Корзинка для белья</a>
+						</h3>
+						<dl class="catalog__desc-list">
+							<div class="catalog__desc-item">
+								<dt class="catalog__term">Диаметр</dt>
+								<dd class="catalog__value">15 см<span>,</span></dd>			
+							</div>
+							<div class="catalog__desc-item">
+								<dt class="catalog__term">высота</dt>
+								<dd class="catalog__value">10 см</dd>
+							</div>
+						</dl>
+						<div class="catalog__container-buy">
+							<b class="catalog__cost">690 руб.</b>
+							<button class="catalog__add order--js" type="button">
+								<svg class="catalog__cart-icon" role="presentation" aria-hidden="true"
+					 			 focusable="false" width="20" height="19">
+								 	<use xlink:href="#icon-btn-cart"></use>
+								</svg>
+								Добавить в корзину 
+							</button>
+						</div>
+					</div>
+				</li>
+				<li class="catalog__item" tabindex="0">
+					<div class="catalog__container-img">
+						<a href="#desc">
+							<picture>
+								<source type="image/webp" media="(min-width: 1150px)" 
+								 srcset="img/catalog/photo-toys-desktop@1x.webp 1x,
+								         img/catalog/photo-toys-desktop@2x.webp 2x">
+								<source type="image/webp" media="(min-width: 768px)" 
+								 srcset="img/catalog/photo-toys-tablet@1x.webp 1x,
+								         img/catalog/photo-toys-tablet@2x.webp 2x">
+								<source type="image/webp" 
+								 srcset="img/catalog/photo-toys-mobile@1x.webp 1x,
+								         img/catalog/photo-toys-mobile@2x.webp 2x">
+
+								<source media="(min-width: 1150px)" 
+								 srcset="img/catalog/photo-toys-desktop@1x.jpg 1x,
+								         img/catalog/photo-toys-desktop@2x.jpg 2x">
+								<source media="(min-width: 768px)" 
+								 srcset="img/catalog/photo-toys-tablet@1x.jpg 1x,
+								         img/catalog/photo-toys-tablet@2x.jpg 2x">
+								<img class="catalog__image" 
+								 src="img/catalog/photo-toys-mobile@1x.jpg" 
+								 srcset="img/catalog/photo-toys-mobile@2x.jpg 2x" 
+								 alt="Большая вязанная корзина для игрушек бело-зелёного цвета">
+							</picture>		
+						</a>
+					</div>
+					<div class="catalog__container-main">
+						<h3 class="catalog__product-title">
+							<a href="#desc">Большая корзинка для игрушек</a>
+						</h3>
+						<dl class="catalog__desc-list">
+							<div class="catalog__desc-item">
+								<dt class="catalog__term">Диаметр</dt>
+								<dd class="catalog__value">30 см<span>,</span></dd>			
+							</div>
+							<div class="catalog__desc-item">
+								<dt class="catalog__term">высота</dt>
+								<dd class="catalog__value">30 см</dd>
+							</div>
+						</dl>
+						<div class="catalog__container-buy">
+							<b class="catalog__cost">1 500 руб.</b>
+							<button class="catalog__add order--js" type="button">
+								<svg class="catalog__cart-icon" role="presentation" aria-hidden="true"
+					 			 focusable="false" width="20" height="19">
+								 	<use xlink:href="#icon-btn-cart"></use>
+								</svg>
+								Добавить в корзину 
+							</button>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</section>
+		
+		<!-- Production -->
+		<section class="production">
+			<div class="production__wrapper">
+				<h2 class="production__title">Процесс производства</h2>
+				<div class="production__container-img">
+					<picture>
+						<source type="image/webp" media="(min-width: 1150px)" 
+						 srcset="img/production/video-desktop@1x.webp 1x,
+						         img/production/video-desktop@2x.webp 2x">
+						<source type="image/webp" media="(min-width: 768px)" 
+						 srcset="img/production/video-tablet@1x.webp 1x,
+						         img/production/video-tablet@2x.webp 2x">
+						<source type="image/webp" 
+						 srcset="img/production/video-mobile@1x.webp 1x,
+						         img/production/video-mobile@2x.webp 2x">
+
+						<source media="(min-width: 1150px)" 
+						 srcset="img/production/video-desktop@1x.jpg 1x,
+						         img/production/video-desktop@2x.jpg 2x">
+						<source media="(min-width: 768px)" 
+						 srcset="img/production/video-tablet@1x.jpg 1x,
+						         img/production/video-tablet@2x.jpg 2x">
+						<img class="catalog__image" 
+						 src="img/production/video-mobile@1x.jpg" 
+						 srcset="img/production/video-mobile@2x.jpg 2x" 
+						 alt="Большая вязанная корзина для игрушек бело-зелёного цвета">
+					</picture>
+					<a class="production__play" href="https://www.youtube.com/watch?v=F6gnmChf7fM"
+					 target="_blank">
+						<span class="visually-hidden">Запуск видео</span>
+					</a>
+				</div>			
+				<div class="production__container-desc">
+					<p class="production__text">По просьбам наших любимых фолловеров 
+					мы сняли для вас подробное видео о том, как появляются наши товары.</p> 
+					<a class="production__link button" href="#order-2">Сделать заказ</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<!-- Page-Footer -->
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__logo-footer">
+				<a class="page-footer__link-logo" href="index.html">
+					<svg class="page-footer__logo" focusable="false" width="102" height="34">
+					 	<use xlink:href="#logo-footer"></use>
+					</svg>
+				</a>
+			</div>
+			<div class="page-footer__social">
+				<ul class="page-footer__social-list social-list">
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://www.instagram.com/stassynhik/" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="22" height="21">
+							 	<use xlink:href="#icon-social-insta"></use>
+							</svg>
+							<span class="visually-hidden">Инстаграм</span>
+						</a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://ru-ru.facebook.com" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="15" height="28">
+							 	<use xlink:href="#icon-social-fb"></use>
+							</svg>
+							<span class="visually-hidden">Фейсбук</span>
+						</a>
+					</li>
+					<li class="social-list__item">
+						<a class="social-list__link" href="https://twitter.com/IC1101s" target="_blank">
+							<svg class="social-list__icon" focusable="false" role="presentation" 
+							 aria-hidden="true" width="24" height="20">
+							 	<use xlink:href="#icon-social-twitter"></use>
+							</svg>
+							<span class="visually-hidden">Твитер</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright">
+				<a class="page-footer__link-copyright" href="mailto:stas20stas@gmail.com" target="_blank">by Stanislav.S</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Modal-Cart -->
+	<section class="modal-cart">
+		<div class="modal-cart__wrapper">
+			<h2 class="modal-cart__title">Добавить в корзину</h2>
+			<p class="modal-cart__text">Выберите размер:</p>
+			<form method="get">
+				<fieldset class="modal-cart__sizes">
+					<legend class="visually-hidden">Размер:</legend>
+					<ul class="modal-cart__list">
+						<li class="modal-cart__item">
+							<input class="modal-cart__input visually-hidden" type="radio" name="size" 
+							 id="size-s" value="S" checked>
+							<label class="modal-cart__label" for="size-s">s</label>
+						</li>
+						<li class="modal-cart__item">
+							<input class="modal-cart__input visually-hidden" type="radio" name="size" 
+							 id="size-m" value="M">
+							<label class="modal-cart__label" for="size-m">m</label>
+						</li>
+						<li class="modal-cart__item">
+							<input class="modal-cart__input visually-hidden" type="radio" name="size" 
+							 id="size-l" value="L">
+							<label class="modal-cart__label" for="size-l">l</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button class="modal-cart__button button" type="submit">Добавить</button>
+			</form>
+		</div>
+	</section>
+	<div class="modal-overlay"></div>
+
+	<script src="js/main-nav/main-nav.js"></script>
+	<script src="js/modal-cart/modal-cart.js"></script>
+</body>
+</html>
